@@ -16,7 +16,7 @@ module Recognizable
 
     # TODO Move this to different gem
     def machine_generated_object_name?(s)
-      s =~ /\A#<[A-Z_][a-zA-Z_0-9]+:0x[0-9abcdef]+>\Z/
+      s =~ /\A#<[A-Z_][a-zA-Z_0-9]+(::[A-Z_][a-zA-Z_0-9]+)*:0x[0-9abcdef]+>\Z/
     end
   end
 end
