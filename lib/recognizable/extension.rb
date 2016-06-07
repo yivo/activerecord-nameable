@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Recognizable
   module Extension
     extend ActiveSupport::Concern
